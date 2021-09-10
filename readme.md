@@ -70,11 +70,11 @@ By the end of the workshop you will have implemented the lab architecture refere
 
 ![Architecture Design](media//architecture.png "Architecture Design")
 
-1. Os dados que são utilizados nas transformações serão enviados ao Azure através do Azure Data Factory. (Para a poc os dados já estarão pousados direto no Azure Data Lake)
-2. Para a transformação, será utilizado o Power Query do Azure Data Factory, ferramenta user 3. friendly muito parecida com o Excel.
-4. Para converter o dado em XML, será utilizado uma função em Python através do Azure Functions.
-5. Para orquestrar todo esse processo será utilizado o Azure Data Factory.
-E para armazenar o dado, tanto bruto quanto XML final será utilizado o Data Lake Storage.
+1. The csv data that is used in transformations will be sent to Azure through Azure Data Factory.
+2. For the transformation, Azure Data Factory Power Query will be used, a user friendly tool very similar to Excel.
+4. To convert the data into XML, a Python function will be used through Azure Functions.
+5. To orchestrate this entire process, Azure Data Factory will be used.
+And to store the data, both raw and final XML, Data Lake Storage will be used. 
 
 ### [Lab 1: Ingest the CSV to the datalake](labs/lab-1/Lab1.md)
 
