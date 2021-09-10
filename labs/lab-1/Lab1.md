@@ -14,7 +14,7 @@ Azure Data Factory | [Integrate data with Azure Data Factory or Azure Synapse Pi
 
 ## Lab Architecture
 
-![](/media/architecture-lab-1.pnG)
+![](/media/architecture-lab-1.png)
 
 Step     | Description
 -------- | -----

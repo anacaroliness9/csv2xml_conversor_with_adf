@@ -58,7 +58,7 @@ The following prerequisites must be completed before you start these labs:
 
 ## Lab Guide
 
-Throughout a series of XXX labs you will progressively implement a solution for the use case problem presented below.
+Throughout a series of four labs you will progressively implement a solution for the use case problem presented below.
 
 ### Use Case
 
