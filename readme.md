@@ -12,7 +12,7 @@ In this workshop you will learn how to create a data pipeline using Azure Data F
 - [CSV to XML with Azure Data Factory](#csv-to-xml-with-azure-data-factory)
   - [Document Structure](#document-structure)
   - [Prerequisites](#prerequisites)
-  - [Services Userd](#services-userd)
+  - [Services Used](#services-used)
   - [Lab Guide](#lab-guide)
     - [Use Case](#use-case)
     - [Proposed Architecture](#proposed-architecture)
@@ -23,19 +23,18 @@ In this workshop you will learn how to create a data pipeline using Azure Data F
 
 <!-- /TOC -->
 
-
 ## Document Structure
 
 This document contains detailed step-by-step instructions on how to implement a data pipeline to transform and export a csv file to a xml. It’s recommended to you carefully read the detailed description contained in this document for a successful experience with all Azure services.
 
 You will see the label **IMPORTANT** whenever there is a critical step to the lab. Please pay close attention to the instructions given.
 
-For each lab it will be required you to create some resources (Azure Storage, Azure Data Factory, etc.) in your Azure Subscription. For do so, it will be expected your create the resource manually (it won`t be provided templates or script to create the services automatically). To help you it will be added in each lab the documentations that could be useful to do that.
+For each lab it will be required you to create some resources (Azure Storage, Azure Data Factory, etc.) in your Azure Subscription. For do so, it will be expected you create the resource manually (it won`t be provided templates or script to create the services automatically). To help you it will be added in each lab the documentations that could be useful to do that.
 
 ## Prerequisites
 The following prerequisites must be completed before you start these labs:
 
-* You must be connected to the internet;
+* You must be connected to the internet.
 
 * Use either Edge or Chrome when executing the labs. Internet Explorer may have issues when rendering the UI for specific Azure services.
 
@@ -47,7 +46,7 @@ The following prerequisites must be completed before you start these labs:
 
 * Please create the resources in a separated Resource Group.
 
-## Services Userd
+## Services Used
 | Service                     | Documentation                                                              |
 |-----------------------------|---------------------------------------------------------------------------|
 | Azure Storage         | https://docs.microsoft.com/pt-br/azure/storage/blobs/                     |
@@ -62,16 +61,16 @@ Throughout a series of four labs you will progressively implement a solution for
 
 ### Use Case
 
-Our custumer Contoso have just bought a new application system, and the IT teamm will have to send data from the Data Lake every three months. The first issue is the application don't connect directly to the Data Lake and besides that, the only kind of data this application acept is the XML format. The second issue is the IT team from Contoso are not proficient in any programming language to do this conversion and the business team would like to check if the data from the data lake is ok, and do some transformation at the data when necessary, they are not proficient in any programming language as well. They need a user friendly front end to download the XML file to send to the application in the first moment, but in the future, they would like to send automatically.
+Our custumer Contoso have just bought a new application system, and the IT teamm will have to send data from the Data Lake every three months. The first issue is the application don't connect directly to the Data Lake and besides that, the only kind of data this application acept is the XML format. The second issue is the IT team from Contoso are not proficient in any programming language to do this conversion and the business team would like to check if the data from the data lake is ok, and do some transformation at the data, when necessary, they are not proficient in any programming language as well. They need a user-friendly front end to download the XML file to send to the application in the first moment, but in the future, they would like to send automatically.
 
 ### Proposed Architecture 
 
-By the end of the workshop you will have implemented the lab architecture referenced below:
+By the end of the workshop, you will have implemented the lab architecture referenced below:
 
 ![Architecture Design](media//architecture.png "Architecture Design")
 
 1. The csv data that is used in transformations will be sent to Azure through Azure Data Factory.
-2. For the transformation, Azure Data Factory Power Query will be used, a user friendly tool very similar to Excel.
+2. For the transformation, Azure Data Factory Power Query will be used, a user-friendly tool very similar to Excel.
 4. To convert the data into XML, a Python function will be used through Azure Functions.
 5. To orchestrate this entire process, Azure Data Factory will be used.
 And to store the data, both raw and final XML, Data Lake Storage will be used. 
@@ -79,9 +78,6 @@ And to store the data, both raw and final XML, Data Lake Storage will be used.
 ### [Lab 1: Ingest the CSV to the datalake](labs/lab-1/Lab1.md)
 
 In this lab you will create a data lake and ingest it data from a on premises source with Azure Data Factory.
-
-The estimated time to complete this lab is: **xx minutes**
-
 
 ### [Lab 2: Transform the data with low code](labs/lab-2/Lab2.md)
 
@@ -97,3 +93,5 @@ In this lab you will create an Azure Function generic to convert any JSON to XML
 
 <br>
 <br>
+
+
